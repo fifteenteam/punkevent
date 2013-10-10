@@ -183,21 +183,7 @@
 									<p class="">Присоединяйся!</p>
 								</div>
 								<div class="ktogde">
-									<p>	
-										<a href="#" class="username">Vasya</a>
-										<span>&nbsp&nbsp&nbspСейчас&nbsp&nbsp&nbsp</span>
-										<a class=""href="#">tut</a>
-									</P>
-									<p>
-										<a href="#" class="username">Vasya</a>
-										<span>&nbsp&nbsp&nbspСейчас&nbsp&nbsp&nbsp</span>
-										<a class=""href="#">tut</a>
-									</P>
-									<p>
-										<a href="#" class="username">Vasya</a>
-										<span>&nbsp&nbsp&nbspСейчас&nbsp&nbsp&nbsp</span>
-										<a class=""href="#">tut</a>
-									</P>       	
+									     	
 								</div>
 							</div>
 							<div class="block secondwin">
