@@ -37,7 +37,7 @@ include 'conf.php';
       setcookie("id", $data['id'], time()+60*60*24*30, '/'); 
       setcookie("hash", $hash, time()+60*60*24*30, '/'); 
       
-       header('Location: ../index.php'); exit();
+       header('Location: ../categoryevent.php'); exit();
       # Переадресовываем браузер на страницу проверки нашего скрипта 
       // header("Location: check.php"); exit(); 
     } 
