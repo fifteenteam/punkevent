@@ -16,7 +16,7 @@
 	});
 	</script>
 </head>
-<body onload="AjaxLoadRequest('ktogde','http://spbphoto.net/startbl/load-ktogde.php')">
+<body onload="AjaxLoadRequest('ktogde','http://spbphoto.net/startbl/phpactions/phpactions/load-ktogde.php')">
 	<?php $fullload=0; ?>
 
 	<!-- vasya -->

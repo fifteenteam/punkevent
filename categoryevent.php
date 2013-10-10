@@ -16,7 +16,7 @@
 	});
 	</script>
 </head>
-<body onload="AjaxLoadRequest('main-list','http://spbphoto.net/startbl/load-list.php'); AjaxLoadRequest('ktogde','http://spbphoto.net/startbl/load-ktogde.php')">
+<body onload="AjaxLoadRequest('main-list','http://spbphoto.net/startbl/load-list.php'); AjaxLoadRequest('ktogde','http://spbphoto.net/startbl/phpactions/load-ktogde.php')">
 	<!-- vasya -->
 	<?php
 	include 'phpactions/conf.php'; 
