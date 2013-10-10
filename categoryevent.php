@@ -124,7 +124,7 @@
 						</div>
 						<div class="modal-footer">
 						</form>
-						<button type="submit" data-dismiss="modal" aria-hidden="true" class="btn btn-primary" onclick="AjaxFormRequest('<?php echo $logined;?>',1, 'orgform', 'phpactions/req.php?',document.URL); AjaxLoadRequest('main-list','load-list.php');" >Создать</button>	 						</div>
+						<button type="submit" data-dismiss="modal" aria-hidden="true" class="btn btn-primary" onclick="AjaxFormRequest('<?php echo $logined;?>',1, 'orgform', 'phpactions/req.php?',document.URL); AjaxLoadRequest('main-list','http://spbphoto.net/startbl/load-list.php');" >Создать</button>	 						</div>
 					</div>
 					<div class="row main-row first-row">
 						<div class="span2">
@@ -152,7 +152,9 @@
 								<div class="header">
 									<p class="pull-left">Присоединяйся!</p>
 								</div>
-								<div class="ktogde">
+
+								<div class="ktogde" id="ktogde">
+
 									      	
 								</div>
 							</div>

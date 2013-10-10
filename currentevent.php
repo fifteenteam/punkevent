@@ -182,8 +182,10 @@
 								<div class="header">
 									<p class="">Присоединяйся!</p>
 								</div>
-								<div class="ktogde">
-									     	
+
+
+								<div class="ktogde" id="ktogde">
+
 								</div>
 							</div>
 							<div class="block secondwin">
