@@ -1,0 +1,32 @@
+<!-- 
+	
+	// 	echo "<div class='anon-wrap'>";
+
+		
+	// 	echo "<div class='list-img-wrap'>";
+	// 	echo "<img class='list-img' src='".$data['img']."'></img>";
+	// 	echo '</div>';
+		
+
+	// 	echo "<p>".$data['anon']."</p>";
+	// 	echo '</div>';
+
+
+
+
+	</a> 
+
+	// echo "<div class='sub'>";
+
+
+	// echo '</div>';
+
+	// echo "<div class='info-wrap'>";
+	// if($data["user"]!=null){
+	// echo "<div class='date-wrap'><a href='#'>".$data['time']."</a></div>&nbsp&nbsp&nbsp<a href='#'>".$data['place']."</a>&nbsp&nbsp&nbsp<a href='#'>".$data['fuck']."</a><span class='pull-right'>Создал&nbsp&nbsp&nbsp<a href='#' class='pull-right' style='	color: #00CCB1;'>".$data['user']."</a></span>";
+	// }
+	
+	// echo '</div>';
+	// echo "<div class='divider'>";
+	// echo '</div>';
+  -->

@@ -1,0 +1,246 @@
+[class*='span']{
+
+	border-radius: 0px;
+	height:auto;
+	background-color: rgba(0,0,0,0.05);
+	padding-bottom: 10px;
+}
+.span2{
+	background: none;
+}
+.span3{
+	margin-left: 15px;	
+}
+.span5{
+	width: 550px;
+}
+.first-row > .span3{
+	background: none;
+}
+#main-list{
+
+}
+body{
+  background-image: url('../img/geometry.png');
+
+}
+.navbar-inner{
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #171717;
+ /* background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+  *//*border: 1px solid #d4d4d4;
+ /* -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  */
+  *zoom: 1;
+}
+.navbar{
+	width: 100%;
+  border-radius: 0px;
+  position: fixed;
+  border-bottom: 1px solid #DD5440;
+}
+.navbar .brand {
+  float: left;
+  display: block;
+  padding: 10px 20px 10px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #DD5440;
+  /*text-shadow: 0 1px 0 #ffffff;*/
+}
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: #eee;
+  text-decoration: none;
+/*  text-shadow: 0 1px 0 #ffffff;*/
+}
+.main-row {
+  /*margin-top: 40px;*/
+} 
+.login{
+  float: right;
+}
+.block-list, .block{
+  background-color: #121212;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+  
+  /*border-radius: 8px;*/
+  
+}
+/*.anon-wrap:hover{
+  background-color: #212121;
+
+-webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px;
+-moz-border-radius-topleft: 8px;
+-moz-border-radius-topright: 8px;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+
+  
+}*/
+.block-list:hover{
+	  background-color: #DD5440;
+}
+.anon-wrap > p{
+  color: #e2e2e2;
+  /*padding: 10px;*/
+  margin: 0 0 0 0 !important;
+
+
+}
+.anon-wrap > span{
+  color: #e2e2e2;
+  /*padding: 10px;*/
+  margin: 0 0 0 0 !important;
+
+
+}
+
+
+.block-list > .divider{
+  /*display: block;*/
+  width: 100%;
+  height: 2px;
+  background-color: #DD5440;
+}
+
+
+.block > a{
+  text-decoration: none;
+}
+.list-Header{
+	text-align: center;
+}
+.span5{
+
+}
+.org-wrap{
+	text-align: right;
+	margin: 4px 10px 4px 0;
+}
+.modal{
+	display: none;
+}
+.textarea-org{
+	width: 300px;
+	height: 50px;
+	resize: none;
+}
+.org-sub{
+	float: none;
+}
+.first-row{
+	margin-top: 40px;
+}
+.spanfirst{
+	/*height: 35px;*/
+}
+.list-Header > h1{
+	margin: 4px;
+}
+.firstwin, .secondwin{
+	padding: 10px 20px 10px 20px;
+}
+
+.username{
+	color: #00CCB1;
+		margin:  0;
+		cursor: pointer;
+}
+.ktogde > p{
+	margin: 4px 0;
+}
+.firstwin > .header > p, .secondwin > .header > p{
+	color: #DD5440;	
+	font-size: 20px;
+	float: none;
+}
+.ktogde{
+	margin: 0 0 0 10px;
+}
+.ktogde > p > span{
+	color: #666;
+}
+.secondwin{
+	margin-top: 20px;
+}
+.second-row > .span3{
+	padding-top: 132px;
+	margin-top: -132px;
+}
+.imggallery{
+	display: block;
+	float: none;
+}
+.img-wrap{
+	display: inline-block;
+	width: 64px;
+	overflow: hidden;
+	padding: 1px;
+}
+
+
+
+.block-list > .username{
+	margin-right: 20px;
+}
+
+/*-----------*/
+.userinfo-list{
+	width: 100%;
+	text-align: right;
+
+}
+.userinfo-list > a{
+	margin-right: 10px;
+
+}
+
+.img-layout> img{
+	height: 100px;
+	vertical-align: top;
+}
+.img-layout{
+	width: 110px;
+	display: inline-block;
+	height: 100%;
+	overflow: hidden;
+	float: left;
+}
+
+.anon-wrap{
+	/*width: 400px;*/
+	display: inline-block;
+	padding: 18px;
+	 word-wrap: break-word;
+}
+.info-list > a{
+	  color: #0088cc;
+	  margin-left: 30px;
+	  cursor: pointer;
+}
+.tag-list > a{
+	color: #545454;
+
+		  margin-left: 30px;
+	  cursor: pointer;
+}
+/*.tag-list{
+	background-color: #DD5440;
+}*/
