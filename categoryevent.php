@@ -25,7 +25,7 @@
 	?>
 	<div class="navbar navbar-inverse">
 		<div class="navbar-inner">
-			<a class="brand" href="#">PUNKDRINK</a>
+			<a class="brand" href="#">SPbSU-EVENT</a>
 			<ul class="nav" >
 				<li class="dropdown"> 
 					<a class="dropdown-toggle" href="#">Факультеты</a>
@@ -35,13 +35,7 @@
 						<li><a tabindex="-1" href="#">ПМ-ПУ</a></li>
 					</ul>
 				</li>
-				<li class="dropdown"> <a class="dropdown-toggle" href="#">Места</a>
-					<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-						<li><a tabindex="-1" href="#">14 общ</a></li>
-						<li><a tabindex="-1" href="#">15 общ</a></li>
-						<li><a tabindex="-1" href="#">16 общ</a></li>
-					</ul>
-				</li>
+				
 				<li > <a  href="#">WTF?</a></li>
 			</ul>
 			<?php
@@ -50,7 +44,7 @@
 			<?php
 		}
 			?>
-			<a class='username' style='float: right; margin: 10px 20px 10px 0; font-size: 20px'>
+			<a class='username' style='float: right; margin: 10px 20px 10px 0; font-size: 15px'>
 			<?php
 # подключаем конфиг
 			include 'phpactions/conf.php';  
