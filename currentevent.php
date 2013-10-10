@@ -21,6 +21,7 @@
 
 	<!-- vasya -->
 	<?php
+	include 'phpactions/conf.php'; 
 // GLOBALS
 	$logined=anonimus;
 	?>
@@ -140,9 +141,7 @@
 								</div>
 								<h1 class="curevent-header">
 									<?php
-									$connect=mysql_pconnect("localhost","u3496625_admin","yfkbbpqjjv");
-									mysql_select_db ("u3496625_main");
-									if ( !$connect ) die ("Невозможно подключение к MySQL");
+									
 									$qr_result = mysql_query("select * from VPUNK WHERE id=".$_GET["id"]." ");
 									$counter=0;
 									$data = mysql_fetch_array($qr_result);

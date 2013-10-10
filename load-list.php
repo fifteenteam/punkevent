@@ -1,7 +1,5 @@
 <?php
-$connect=mysql_pconnect("localhost","u3496625_admin","yfkbbpqjjv");
-mysql_select_db ("u3496625_main");
-if ( !$connect ) die ("Невозможно подключение к MySQL");
+include 'phpactions/conf.php'; 
 $qr_result = mysql_query("select * from VPUNK ORDER BY  `VPUNK`.`id` DESC ");
 while($data = mysql_fetch_array($qr_result)){ 
 	// echo "<a href=".$data["url"]."'>";

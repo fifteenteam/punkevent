@@ -1,7 +1,7 @@
 <?php
-$connect=mysql_pconnect("localhost","u3496625_admin","yfkbbpqjjv");
-mysql_select_db ("u3496625_main");
-if ( !$connect ) die ("Невозможно подключение к MySQL");
+// $connect=mysql_pconnect("localhost","u3496625_admin","yfkbbpqjjv");
+// mysql_select_db ("u3496625_main");
+// if ( !$connect ) die ("Невозможно подключение к MySQL");
 $qr_result = mysql_query("select * from VPUNK ORDER BY  `VPUNK`.`time` DESC ");
 $counter=0;
 while($data = mysql_fetch_array($qr_result)){ 

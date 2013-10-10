@@ -6,9 +6,7 @@ $fuck=$_POST['fuck'];
 $anon=$_POST['anon'];
 $user=$_POST  ['logined'];
 $header=$_POST['header'];
-$connect=mysql_pconnect("localhost","u3496625_admin","yfkbbpqjjv");
-mysql_select_db ("u6237881_main");
-if ( !$connect ) die ("Невозможно подключение к MySQL");
+include 'conf.php'; 
 $img;
 if(is_uploaded_file($_FILES["filename"]["tmp_name"]))
 {
