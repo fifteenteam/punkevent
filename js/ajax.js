@@ -31,4 +31,18 @@
                 }
               });
       // console.log( data);
-    }
+    };
+
+     function AjaxImGoRequest(result_id, user,id, url) {
+      jQuery.ajax({
+                    url:     url, //Адрес подгружаемой страницы
+                    type:     "GET", //Тип запроса
+                    dataType: "html", //Тип данных
+                    data: "user="+user+"&id="+id, 
+                        success: function(response) { //Если все нормально
+                          document.getElementById(result_id).innerHTML = response ;
+                        },
+                        
+                      });
+     console.log("user="+user+"&id="+id);
+     };

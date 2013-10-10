@@ -15,7 +15,7 @@ while(($data = mysql_fetch_array($qr_result))  ){
 		echo "<p>";
 		echo "<a href='#' class='username'  >".$curusers[0][sizeof($curusers[0])-1]."</a>";
 		echo "<span>&nbsp&nbspПосетит</span>&nbsp&nbsp";
-		echo "<a href='#' class=''  >".$data['header']."</a>";
+		echo "<a href='./currentevent.php?id=".$data['id']."' class=''  >".$data['header']."</a>";
 		echo "</p>";
 		unset($curusers);
 		$allcount++;

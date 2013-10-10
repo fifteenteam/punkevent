@@ -61,7 +61,7 @@
 					$logined='anonimus';
 				} 
 				else if( ($userdata['hash'] == $_COOKIE['hash']) and ($userdata['id'] == $_COOKIE['id']) ){
-					echo "LOGINED";
+					echo $userdata['login'];
 					$logined=$userdata["login"];
 				}
 			} 

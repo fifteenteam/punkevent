@@ -16,7 +16,7 @@
 	});
 	</script>
 </head>
-<body onload="AjaxLoadRequest('ktogde','http://spbphoto.net/startbl/phpactions/phpactions/load-ktogde.php')">
+<body onload=" AjaxLoadRequest('ktogde','phpactions/load-ktogde.php')">
 
 	<?php $fullload=0; ?>
 
@@ -64,7 +64,7 @@
 					$logined='anonimus';
 				} 
 				else if( ($userdata['hash'] == $_COOKIE['hash']) and ($userdata['id'] == $_COOKIE['id']) ){
-					echo "LOGINED";
+					echo $userdata['login'];
 					$logined=$userdata["login"];
 				}
 			} 
@@ -107,94 +107,72 @@
 					<button class="btn" data-dismiss="modal" aria-hidden="true">Закрыть</button>
 				</div>
 			</div>
-			<div class="modal" id="org-wind" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 id="myModalLabel">Организовать ивент</h3>
+
+			<div class="row main-row first-row">
+				<div class="span2">
 				</div>
-				<div class="modal-body">
-					<form id="orgform" enctype = 'multipart/form-data'>
-						<fieldset>
-							<label>Дата</label>
-							<input name="date" type="date" placeholder="">
-							<label>Место</label>
-							<input name="place" type="text" placeholder="Введите текст…">
-							<div>
-								<label class="textarea-label" >Анонс</label>
-								<textarea name="anon" class="textarea-org"type="text" placeholder="Введите текст…"></textarea>
-								<label>хэштег</label>
-								<input  name="fuck" type="text" placeholder="Введите текст…">
-							</fieldset>
+				<div class="span5 spanfirst block nopoint" id="main">
+					<div class="list-Header">
+
+						<div class="org-wrap">
+
+							<!-- <a data-toggle="modal" href="#org-wind" class="btn btn-primary org" >Организовать ивент</a> -->
 						</div>
-						<div class="modal-footer">
-						</form>
-						<button type="submit" data-dismiss="modal" aria-hidden="true" class="btn btn-primary" onclick="AjaxFormRequest('<?php echo $logined;?>',1, 'orgform', 'phpactions/req.php?', document.URL); AjaxLoadRequest('main-list','load-list.php');" >Создать</button>	 						</div>
+						<h1 class="curevent-header">
+							<?php
+
+							$qr_result = mysql_query("select * from VPUNK WHERE id=".$_GET["id"]." ");
+							$counter=0;
+							$data = mysql_fetch_array($qr_result);
+							echo $data["header"];									
+							?>
+
+						</h1>
 					</div>
-					<div class="row main-row first-row">
-						<div class="span2">
-						</div>
-						<div class="span5 spanfirst block nopoint" id="main">
-							<div class="list-Header">
 
-								<div class="org-wrap">
-									
-									<!-- <a data-toggle="modal" href="#org-wind" class="btn btn-primary org" >Организовать ивент</a> -->
-								</div>
-								<h1 class="curevent-header">
-									<?php
-									
-									$qr_result = mysql_query("select * from VPUNK WHERE id=".$_GET["id"]." ");
-									$counter=0;
-									$data = mysql_fetch_array($qr_result);
-									echo $data["header"];									
-									?>
+				</div>
+				<div class="span3 spanfirst" id="main">
+				</div>
+				<div class="span2 ">
+				</div>
+			</div>  
+			<div class="row main-row second-row">
+				<div class="span2">
+				</div>
+				<div class="span5 spanfirst block nopoint" id="main">
+					<div class="list-Header">
+						<img stile="width: 100px; float: left;" src="<?php echo $data["img"];?>"></img>
+						<p class="curevent-anon"><?php echo $data["anon"];?> </p>
+						<?php preg_match_all("/\S+/", $data['fuck'],$matches);
+						$i=0;
+						while($matches[0][$i]!=null){
+							echo "<a href='#' style='float: left; margin: 0 10px 0 10px'  >".$matches[0][$i]."</a>";
+							echo "&nbsp&nbsp";
+							$i++;
+						}
+						?>
 
-								</h1>
-							</div>
+					</div>
 
+				</div>
+				<div class="span3 spanfirst" id="main">
+					<div class="block firstwin">
+						<div class="header">
+							<p class="">Присоединяйся!</p>
 						</div>
-						<div class="span3 spanfirst" id="main">
-						</div>
-						<div class="span2 ">
-						</div>
-					</div>  
-					<div class="row main-row second-row">
-						<div class="span2">
-						</div>
-						<div class="span5 spanfirst block nopoint" id="main">
-							<div class="list-Header">
-								<img stile="width: 100px; float: left;" src="<?php echo $data["img"];?>"></img>
-								<p class="curevent-anon"><?php echo $data["anon"];?> </p>
-								<?php preg_match_all("/\S+/", $data['fuck'],$matches);
-								$i=0;
-								while($matches[0][$i]!=null){
-									echo "<a href='#' style='float: left; margin: 0 10px 0 10px'  >".$matches[0][$i]."</a>";
-									echo "&nbsp&nbsp";
-									$i++;
-								}
-								?>
 
-							</div>
+
+						<div class="ktogde" id="ktogde">
 
 						</div>
-						<div class="span3 spanfirst" id="main">
-							<div class="block firstwin">
-								<div class="header">
-									<p class="">Присоединяйся!</p>
-								</div>
+					</div>
+					<div class="block secondwin">
+						<div class="header">
+							<p class="">Фото-Поток</p>
+						</div>
+						<div class="imggallery">
 
-
-								<div class="ktogde" id="ktogde">
-
-								</div>
-							</div>
-							<div class="block secondwin">
-								<div class="header">
-									<p class="">Фото-Поток</p>
-								</div>
-								<div class="imggallery">
-									
-									<?php
+							<?php
   							$dir = 'media/'; // Папка с изображениями
  							$files = scandir($dir); // Берём всё содержимое директории
   							for ($i = 0; $i < count($files); $i++) { // Перебираем все файлы
@@ -220,10 +198,10 @@
      		<div class="span5 spanfirst block nopoint" id="main">
      			<h1 class="curevent-header">Когда? Где?</h1>
      			<?php echo "<div class='info-wrap curevent-info'>";
-     			echo "<a href='#'>".$data['time']."</a>&nbsp&nbsp&nbsp<a href='#'>".$data['place']."</a>&nbsp&nbsp&nbsp<a href='#'>";
+     			echo "<a href='#'>".$data['time']."</a>&nbsp&nbsp&nbsp<a href='#'>".$data['place']."</a>&nbsp&nbsp&nbsp";
 
      			
-     			echo "</a>&nbsp&nbsp&nbsp<a href='#' class='username' style='float: right;' >".$data['user']."</a>";;
+     			echo "&nbsp&nbsp&nbsp<a href='#' class='username' style='float: right;' >".$data['user']."</a><span style='float: right'>Организовал&nbsp&nbsp</span>";;
      			echo '</div>';
      			?>
      		</div>
@@ -238,18 +216,41 @@
      		</div>
      		<div class="span5 spanfirst block" id="main">
      			<h1 class="curevent-header">Кто идет?</h1>
-
+     			
      			<?php echo "<div class='info-wrap curevent-info'>";
      			preg_match_all("/\S+/", $data['whollcome'],$matches);
      			$i=0;
+     			$bool=true;
+
      			while($matches[0][$i]!=null){
      				echo "<a href='#' class='username'  >".$matches[0][$i]."</a>";
+
      				echo "&nbsp&nbsp";
+     				
+     				
+     				if($matches[0][$i]==$userdata["login"]){
+
+     					$bool=false;
+     				}
      				$i++;
      			}
-     			 
+
      			echo '</div>';
      			?>
+     			<div style="text-align: right">
+     				<?php if($bool and $userdata["login"]!=null){ ?>
+     				<button id="imgo" class="btn btn-primary" style="margin-right: 10px" onclick="AjaxImGoRequest('imgo','<?php echo $userdata["login"]; ?>', '<?php echo $_GET['id']; ?>', 'phpactions/imgo.php'); location.reload();">Я пойду!</button>
+     				<?php }
+     				else if(!$bool and $userdata["login"]!=null){ ?>
+<button id="imgo" class="btn btn-primary" style="margin-right: 10px" onclick="AjaxImGoRequest('imgo','<?php echo $userdata["login"]; ?>', '<?php echo $_GET['id']; ?>', 'phpactions/imgo.php'); location.reload();">Я не пойду</button>
+					<?php
+     				}
+
+     				?>
+
+     			</div>
+
+
      		</div>
      		<div class="span3 spanfirst disable-span" id="main">
 
