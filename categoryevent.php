@@ -17,7 +17,7 @@
 	</script>
 </head>
 <body onload="AjaxLoadRequest('main-list','http://spbphoto.net/startbl/load-list.php')">
-<!-- vasya -->
+	<!-- vasya -->
 	<?php
 // GLOBALS
 	$logined=anonimus;
@@ -108,6 +108,8 @@
 				<div class="modal-body">
 					<form id="orgform" enctype = 'multipart/form-data'>
 						<fieldset>
+							<label>Название</label>
+							<input name="header" type="text" placeholder="">
 							<label>Дата</label>
 							<input name="date" type="date" placeholder="">
 							<label>Место</label>
@@ -121,7 +123,7 @@
 						</div>
 						<div class="modal-footer">
 						</form>
-						<button type="submit" data-dismiss="modal" aria-hidden="true" class="btn btn-primary" onclick="AjaxFormRequest('<?php echo $logined;?>',1, 'orgform', 'phpactions/req.php?'); AjaxLoadRequest('main-list','load-list.php');" >Создать</button>	 						</div>
+						<button type="submit" data-dismiss="modal" aria-hidden="true" class="btn btn-primary" onclick="AjaxFormRequest('<?php echo $logined;?>',1, 'orgform', 'phpactions/req.php?',document.URL); AjaxLoadRequest('main-list','load-list.php');" >Создать</button>	 						</div>
 					</div>
 					<div class="row main-row first-row">
 						<div class="span2">
@@ -169,7 +171,7 @@
 							</div>
 							<div class="block secondwin">
 								<div class="header">
-									<p class="pull-left">Медиа</p>
+									<p class="pull-left">Фото-Поток</p>
 								</div>
 								<div class="imggallery">
 									<?php

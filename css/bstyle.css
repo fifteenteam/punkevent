@@ -5,6 +5,10 @@
 	background-color: rgba(0,0,0,0.05);
 	padding-bottom: 10px;
 }
+.curevent-header{
+	color: #e2e2e2;
+	text-align: center;
+}
 .span2{
 	background: none;
 }
@@ -21,14 +25,14 @@
 
 }
 body{
-  background-image: url('../img/geometry.png');
+	background-image: url('../img/geometry.png');
 
 }
 .navbar-inner{
-  min-height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #171717;
+	min-height: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #171717;
  /* background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
   background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
@@ -47,40 +51,41 @@ body{
 }
 .navbar{
 	width: 100%;
-  border-radius: 0px;
-  position: fixed;
-  border-bottom: 1px solid #DD5440;
+	border-radius: 0px;
+	position: fixed;
+	border-bottom: 1px solid #DD5440;
+	z-index: 99;
 }
 .navbar .brand {
-  float: left;
-  display: block;
-  padding: 10px 20px 10px;
-  margin-left: -20px;
-  font-size: 20px;
-  font-weight: 200;
-  color: #DD5440;
-  /*text-shadow: 0 1px 0 #ffffff;*/
+	float: left;
+	display: block;
+	padding: 10px 20px 10px;
+	margin-left: -20px;
+	font-size: 20px;
+	font-weight: 200;
+	color: #DD5440;
+	/*text-shadow: 0 1px 0 #ffffff;*/
 }
 .navbar .nav > li > a {
-  float: none;
-  padding: 10px 15px 10px;
-  color: #eee;
-  text-decoration: none;
-/*  text-shadow: 0 1px 0 #ffffff;*/
+	float: none;
+	padding: 10px 15px 10px;
+	color: #eee;
+	text-decoration: none;
+	/*  text-shadow: 0 1px 0 #ffffff;*/
 }
 .main-row {
-  /*margin-top: 40px;*/
+	/*margin-top: 40px;*/
 } 
 .login{
-  float: right;
+	float: right;
 }
 .block-list, .block{
-  background-color: #121212;
-  margin: 0px 10px 0px 10px;
-  cursor: pointer;
-  
-  /*border-radius: 8px;*/
-  
+	background-color: #121212;
+	margin: 0px 10px 0px 10px;
+	/*cursor: pointer;*/
+
+	/*border-radius: 8px;*/
+
 }
 /*.anon-wrap:hover{
   background-color: #212121;
@@ -95,34 +100,34 @@ border-top-right-radius: 8px;
   
 }*/
 .block-list:hover{
-	  background-color: #DD5440;
+	background-color: #DD5440;
 }
 .anon-wrap > p{
-  color: #e2e2e2;
-  /*padding: 10px;*/
-  margin: 0 0 0 0 !important;
+	color: #e2e2e2;
+	/*padding: 10px;*/
+	margin: 0 0 0 0 !important;
 
 
 }
 .anon-wrap > span{
-  color: #e2e2e2;
-  /*padding: 10px;*/
-  margin: 0 0 0 0 !important;
+	color: #e2e2e2;
+	/*padding: 10px;*/
+	margin: 0 0 0 0 !important;
 
 
 }
 
 
 .block-list > .divider{
-  /*display: block;*/
-  width: 100%;
-  height: 2px;
-  background-color: #DD5440;
+	/*display: block;*/
+	width: 100%;
+	height: 2px;
+	background-color: #DD5440;
 }
 
 
 .block > a{
-  text-decoration: none;
+	text-decoration: none;
 }
 .list-Header{
 	text-align: center;
@@ -160,8 +165,8 @@ border-top-right-radius: 8px;
 
 .username{
 	color: #00CCB1;
-		margin:  0;
-		cursor: pointer;
+	margin:  0;
+	cursor: pointer;
 }
 .ktogde > p{
 	margin: 4px 0;
@@ -228,19 +233,58 @@ border-top-right-radius: 8px;
 	/*width: 400px;*/
 	display: inline-block;
 	padding: 18px;
-	 word-wrap: break-word;
+	word-wrap: break-word;
 }
 .info-list > a{
-	  color: #0088cc;
-	  margin-left: 30px;
-	  cursor: pointer;
+	color: #0088cc;
+	margin-left: 30px;
+	cursor: pointer;
 }
 .tag-list > a{
 	color: #545454;
 
-		  margin-left: 30px;
-	  cursor: pointer;
+	margin-left: 30px;
+	cursor: pointer;
 }
 /*.tag-list{
 	background-color: #DD5440;
-}*/
+	}*/
+	.curevent-anon{
+		margin-top: 20px;
+		color: #e2e2e2;
+		margin: 0 10px 0 10px
+	}
+	.third-row{
+		margin-top: 20px;
+	}
+	.curevent-info{
+		padding: 10px;
+		margin: 10px;
+	}
+	.disable-span{
+		background: none;
+	}
+	.back{
+		float: left;
+		background-color: rgba(221,84,64,0.1);
+		height: 100%;
+		width: 150px;
+
+		text-align: center;
+		cursor: pointer;
+	}
+	.back > p{
+		text-decoration: underline;
+		margin-top: 45px;
+		font-size: 20px;
+		color: rgba(221,84,64,0.3);	
+	}
+	.aside-a{
+				position: fixed;
+
+z-index: 0;
+			margin-top: 45px;
+	}
+	.nopoint{
+		cursor: default !important;
+	}

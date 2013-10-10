@@ -16,12 +16,12 @@
 
 
 
-     function AjaxFormRequest(logined, result_id, form_id, url) {
+     function AjaxFormRequest(logined, result_id, form_id, url, back) {
       jQuery.ajax({
                     url:     url, //Адрес подгружаемой страницы
                     type:     "POST", //Тип запроса
                     dataType: "html", //Тип данных
-                    data: jQuery("#"+form_id).serialize()+"&logined="+logined , 
+                    data: jQuery("#"+form_id).serialize()+"&logined="+logined+"&back="+back, 
                         success: function(response) { //Если все нормально
                         	// document.getElementById(result_id).innerHTML = response;
                          AjaxLoadRequest('main-list','load-list.php');
@@ -30,5 +30,5 @@
                 	document.getElementById(result_id).innerHTML = "Ошибка при отправке формы";
                 }
               });
-      console.log( jQuery("#"+form_id).serialize()+"&logined="+logined );
+      // console.log( data);
     }
