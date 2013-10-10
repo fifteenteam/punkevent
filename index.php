@@ -19,7 +19,7 @@
 <body onload="AjaxLoadRequest('main-list','http://spbphoto.net/startbl/load-list.php')">
 	<?php
 // GLOBALS
-	$logined=anon;
+	$logined=anonimusvasya;
 	?>
 	<div class="navbar navbar-inverse">
 		<div class="navbar-inner">
