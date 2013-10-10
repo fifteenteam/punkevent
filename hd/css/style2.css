@@ -1,0 +1,26 @@
+body{
+	background-color: #ddd;
+}
+.circle{
+margin: 100px 0 0 100px;
+width:  28px;
+height: 28px;
+background-color: #333;
+-webkit-border-radius:18px; 
+border: 2px solid #333;
+}
+.small1{
+	background-color: #333;
+	width:  8px;
+height: 8px;
+margin: 9px 0 0 9px;
+-webkit-border-radius:6px; 
+border: 1px solid #ddd;
+}
+.small2{
+	background-color: #ddd;
+	width:  2px;
+height: 2px;
+margin: 3px 0 0 3px;
+-webkit-border-radius:1px; 
+}
