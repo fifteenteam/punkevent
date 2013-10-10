@@ -45,6 +45,13 @@
 				<li > <a  href="#">WTF?</a></li>
 			</ul>
 			<?php
+			if (isset($_COOKIE['id']) and isset($_COOKIE['hash'])){ ?>
+			<a class='btn btn-primary login'  href='phpactions/exit.php'>Выйти</a>
+			<?php
+		}
+			?>
+			<a class='username' style='float: right; margin: 10px 20px 10px 0; font-size: 20px'>
+			<?php
 # подключаем конфиг
 			include 'phpactions/conf.php';  
 # проверка авторизации	
@@ -71,7 +78,13 @@
 				$logined='anonimus';
 			}
 			?>
-			<a class='btn btn-primary login'  href='phpactions/exit.php'>Выйти</a>
+			</a>
+			<?php
+			if ($userdata["login"]!=null){ ?>
+			<span class="login" style="color: #888">Вы вошли как:&nbsp</span>
+			<?php
+			}
+			?>
 		</div>
 	</div>
 	<div class="container" >
