@@ -18,6 +18,7 @@
 </head>
 <body onload="AjaxLoadRequest('main-list','http://spbphoto.net/startbl/load-list.php')">
   <!-- ITS FOR ME -->
+  <!-- Vasya -->
 	<?php
 // GLOBALS
 	$logined=anonimus;
